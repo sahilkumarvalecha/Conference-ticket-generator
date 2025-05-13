@@ -13,21 +13,31 @@
   <div class="container">
 
     <div class="background">
+          <img class="h-180 w-499 absolute" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/background-desktop.png">
     <img class="w-100 top-10 absolute right-0" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/pattern-squiggly-line-top.svg" alt="">
     <img class="absolute h-180" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/pattern-lines.svg" alt="">
     <img class="absolute bottom-55 right-85" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/pattern-circle.svg" alt="">
     <img class="absolute bottom-0" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt=""> 
-    <img class="w-500 h-183" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/background-desktop.png">
   </div>
  
   <div class="header">
-    <img class=" absolute bottom-145 right-170  w-50 h-50" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
-    <h1 class="inconsolata-Hfont absolute bottom-135 right-125 font-semibold text-5xl text-white ">Your Journey to NSC'25 <br> Start Here!</h1>
-    <p class="absolute bottom-125 right-145 text-white inconsolata-Hfont ">Secure Your spot at this year's biggest conference</p>
+    <img class=" absolute bottom-130 right-155  w-50 h-50" src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+    <h1 class="inconsolata-Hfont absolute bottom-120 right-130 font-semibold text-4xl text-white ">Your Journey to NSC'25 <br>Start Here!</h1>
+    <p class="absolute bottom-112 right-130 text-white inconsolata-Hfont ">Secure Your spot at this year's biggest conference</p>
   </div>
 
   <div class="form">
-      <input class="absolute bottom-85 right-145 h-30 w-100 text-white border border-dashed rounded-lg p-2 bg-transparent text-gray-700 file:bg-blue-500 file:text-white file:hover:blur-sm file:cursor-pointer" type="file" name="picture" id="">
+    <p class="absolute bottom-100 right-197 inconsolata-Hfont text-sm text-white">Upload Avatar</p>
+    <div class="absolute flex-col items-center space-y-2 bottom-68 right-140 inconsolata-Hfont">
+      <label for="avatar-upload" class="w-80 h-30 flex flex-col items-center justify-center border-2 border-dashed border-gray-500 rounded-md cursor-pointer backdrop-blur-[0.5px] text-white text-sm">
+        <img src="/conference-ticket-generator-main (1)/conference-ticket-generator-main/assets/images/icon-upload.svg" alt="Upload" class="w-8 h-8 mb-2" />
+        <span>Drag and drop or click to upload</span>
+        <input id="avatar-upload" type="file" accept="image/*" class="hidden" onchange="previewAvatar(event)" />
+      </label>
+      <div id="avatar-preview" class="mt-2"></div>
+      <p class="absolute inconsolata-Hfont text-sm text-gray-500 whitespace-nowrap">Upload Your Photo (JPG or PNG), max size:500kb</p>
+      
+    </div>
   </div>
 
   </div>
